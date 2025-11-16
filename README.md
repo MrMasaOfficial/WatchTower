@@ -1,34 +1,36 @@
 # System Monitor Pro
 
-نسخة مطورة من Task Manager لمراقبة النظام باستخدام Python و PyQt5.
+An enhanced version of Task Manager for system monitoring using Python and PyQt5.
 
-## الميزات
+## Features
 
-- مراقبة استخدام CPU، RAM، و Disk في الوقت الفعلي
-- مراقبة نشاط الشبكة (البايتات المرسلة/المستلمة في الثانية)
-- عرض نشاط العمليات (أعلى 20 عملية حسب استخدام CPU)
-- تنبيهات عند ارتفاع الاستخدام (CPU > 80%، RAM > 80%، Disk > 90%)
-- تسجيل التنبيهات في ملف system_monitor.log
-- واجهة رسومية مع تحديث تلقائي كل 2 ثوانٍ
+- Real-time CPU, RAM, and Disk usage monitoring
+- Network activity monitoring (bytes sent/received per second)
+- Process activity display (top 20 processes by CPU usage)
+- High usage alerts (CPU > 80%, RAM > 80%, Disk > 90%)
+- Alerts logged to system_monitor.log
+- Graphical interface with automatic updates every 2 seconds
 
-## المتطلبات
+## Requirements
 
 - Python 3.x
 - psutil
 - PyQt5
 
-## التثبيت
+## Installation
 
-1. تثبيت التبعيات: `pip install -r requirements.txt`
+1. Install dependencies: `pip install -r requirements.txt`
 
-## الاستخدام
+## Usage
 
-شغل التطبيق: `python system_monitor_pro.py`
+Run the application: `python system_monitor_pro.py`
 
-ستظهر الواجهة الرسومية مقاييس النظام وتحدث تلقائياً.
+The graphical interface will display system metrics and update automatically.
 
-## ملاحظات
+## Notes
 
-- معدلات الشبكة محسوبة في الثانية.
-- العمليات مرتبة حسب استخدام CPU تنازلياً.
-- التنبيهات تظهر كنوافذ منبثقة وتُسجل.
+- Network speeds are calculated in seconds.
+
+- Processes are sorted by CPU usage in descending order.
+
+- Alerts appear as pop-up windows and are logged.
